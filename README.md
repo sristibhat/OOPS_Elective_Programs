@@ -4,21 +4,19 @@ This repository contains C++ programs developed as part of my Object-Oriented Pr
 
 The programs progress from basic C++ programming concepts to classes, constructors, static members, friend functions, and inheritance.
 
----
-
-## 👨‍🎓 Student Details
+## Student Information
 
 | Field | Details |
 |---|---|
-| Name |Sristi Manjunath Bhat|
-| Roll No. |352 |
-| Division | C|
-| SRN |01FE23BEC146 |
-| Semester |7|
+| Name | Sristi Manjunath Bhat |
+| Roll No. | 352 |
+| Division | C |
+| SRN | 01FE23BEC146 |
+| Semester | 7 |
 
 ---
 
-## 📁 Repository Structure
+## Repository Layout
 
 ```text
 OOPS_Elective_Programs/
@@ -30,17 +28,22 @@ OOPS_Elective_Programs/
 │   ├── Class4/
 │   ├── Class5/
 │   ├── Class6/
-│   └── Class7/
+│   ├── Class7/
+│   ├── Class8/
+│   ├── Class9/
+│   ├── Class10/
+│   ├── Class11/
+│   └── Class12/
 │
 ├── .gitignore
 └── README.md
 ```
 
-Each class folder contains the programs covered during the respective class/session.
+The `Programs` directory is divided by class/session. Each folder contains the corresponding C++ source files.
 
 ---
 
-## 📚 Class-wise Programs
+## Class-wise Program Index
 
 ### Class 1 – C++ Fundamentals
 
@@ -125,103 +128,139 @@ Further practice with multi-level inheritance and the `protected` access specifi
 | `prog_1.cpp` | Multi-level inheritance using `Vehicle`, `Car`, and `SportsCar` |
 | `prog_2.cpp` | Multi-level inheritance using protected members |
 
+### Class 8 – Constructor Initializer Lists and Inheritance
+
+These examples practise initializing base-class and derived-class members through constructor initializer lists. They also develop the student-result example using inheritance.
+
+| File | Topic |
+|---|---|
+| `prog_1.cpp` | Initializing base and derived class members in a single-inheritance example |
+| `prog_2.cpp` | Constructor initializer-list practice with `Person`, `Student`, and `IT_Student` |
+| `prog_3.cpp` | Multiple inheritance using `Student`, `Test`, and `Result`; illustrates constructor requirements |
+| `prog_4.cpp` | Creating a result class using parameterized base-class constructors |
+| `prog_5.cpp` | Calculating total marks and percentage for three subjects using multiple inheritance |
+| `prog_6.cpp` | Extending the student result calculation to five subjects |
+
+### Class 9 – Multiple Inheritance
+
+The programs demonstrate how a derived class can inherit features from more than one base class.
+
+| File | Topic |
+|---|---|
+| `prog_1.cpp` | Multiple inheritance using `Liquid`, `Fuel`, and `Petrol` |
+| `prog_2.cpp` | Combining student and test information through `Student`, `Test`, and `Result` classes |
+
+### Class 10 – Virtual Base Classes and Function Overriding
+
+This class covers ambiguity in multiple inheritance and the use of virtual functions to achieve runtime polymorphism.
+
+| File | Topic |
+|---|---|
+| `prog_1.cpp` | Demonstrating ambiguity in the diamond inheritance structure |
+| `prog_2.cpp` | Using a virtual base class to avoid duplicate base-class members |
+| `prog_3.cpp` | Function overriding with a virtual function and a base-class pointer |
+| `prog_4.cpp` | Comparing function calls with and without virtual-function behaviour |
+
+### Class 11 – Runtime Polymorphism and Operator Overloading
+
+The examples apply virtual functions to shape classes and introduce operator overloading for user-defined types.
+
+| File | Topic |
+|---|---|
+| `prog_1.cpp` | Runtime polymorphism using a `Shape` base class and `Circle` |
+| `prog_2.cpp` | Overriding `draw()` in `Circle`, `Square`, and `Triangle` |
+| `prog_3.cpp` | Using an array of base-class pointers to call derived-class functions |
+| `prog_4.cpp` | Abstract `Vehicle` class with derived `Car` and `Bike` classes |
+| `prog_5.cpp` | Overloading binary `+` to add complex numbers |
+| `prog_6.cpp` | Overloading binary `-` to subtract complex numbers |
+| `prog_7.cpp` | Prefix and postfix increment operator overloading |
+| `prog_8.cpp` | Prefix and postfix decrement operator overloading |
+
+### Class 12 – String Operator Overloading and Exception Handling
+
+The final set includes a string concatenation example and programs that demonstrate exception handling with different thrown values and error conditions.
+
+| File | Topic |
+|---|---|
+| `prog_1.cpp` | Concatenating strings using the overloaded `+` operator |
+| `prog_2.cpp` | Basic exception handling with `try`, `throw`, and `catch` |
+| `prog_3.cpp` | Throwing and catching an integer when an input value is zero |
+| `prog_4.cpp` | Handling exceptions of different data types |
+| `prog_5.cpp` | Handling division-by-zero using a thrown message |
+| `prog_6.cpp` | Examining the order of operations in a division-by-zero example |
 
 ---
 
-## 🧠 Concepts Covered
+##  Concepts covered
 
-- Basic C++ syntax
-- Input and output using `cin` and `cout`
-- Variables and data types
-- Functions
-- Parameter passing
-  - Pass by value
-  - Pass by reference
-  - Pass by pointer
-- Strings
-- Classes and objects
-- Data members and member functions
-- Member functions defined outside a class
-- Constructors
-  - Default constructor
-  - Parameterized constructor
-  - Copy constructor
-- Destructors
-- Static data members
-- Static member functions
+- C++ fundamentals, variables, data types, and console input/output
+- Functions and parameter passing: value, reference, and pointer
+- C-style strings and C++ strings
+- Classes, objects, data members, and member functions
+- Default, parameterized, and copy constructors
+- Constructor initializer lists and destructors
+- Static data members and static member functions
 - Friend functions
-- Friend functions involving multiple classes
-- Single-level inheritance
-- Multi-level inheritance
-- Access specifiers
-  - `private`
-  - `public`
-  - `protected`
+- Inheritance: single, multi-level, and multiple
+- Access control using `private`, `public`, and `protected`
+- Virtual base classes and the diamond problem
+- Function overriding and runtime polymorphism
+- Abstract classes and pure virtual functions
+- Operator overloading: binary addition/subtraction and increment/decrement
+- Exception handling using `try`, `throw`, and `catch`
 
 ---
 
-## 💻 Programming Language
+## Language and Tools
 
-**C++**
+**Language:** C++
 
-The programs use standard C++ features and headers such as:
-
-```cpp
-#include <iostream>
-#include <cstring>
-#include <string>
-```
-
----
-
-## 🛠️ Tools Used
-
-- C++
+**Tools used:**
 - GCC / G++ compiler
-- Visual Studio Code / Code::Blocks
-- Git
-- GitHub
+- Visual Studio Code
+- Code::Blocks
+- Git and GitHub
+
+The programs use standard C++ headers, including `<iostream>`, `<cstring>`, and `<string>` where required.
 
 ---
 
-## ▶️ How to Run
+## Running the Programs
 
-### Option 1: Visual Studio Code
+### Using Visual Studio Code or a terminal
 
-Open the repository folder in Visual Studio Code.
-
-Compile a program using:
+1. Open the repository folder in Visual Studio Code.
+2. Open the terminal in the repository's root directory.
+3. Compile the required source file. For example:
 
 ```bash
-g++ Programs/Class_1/prog_1.cpp -o program
+g++ Programs/Class1/prog_1.cpp -o program
 ```
 
-Run it on Windows using:
+4. Run the executable on Windows:
 
 ```bash
 program.exe
 ```
 
-Or, depending on the terminal:
+On Linux or macOS, use:
 
 ```bash
 ./program
 ```
 
-Replace the file path with the required `.cpp` program.
+Change the source-file path to the class and program you want to run.
 
-### Option 2: Code::Blocks
+### Using Code::Blocks
 
-1. Open Code::Blocks.
+1. Launch Code::Blocks.
 2. Open the required `.cpp` file.
-3. Make sure GCC/MinGW is configured.
-4. Select **Build and Run**.
-5. The output will appear in the console window.
+3. Check that a GCC/MinGW compiler is configured.
+4. Choose **Build and Run**.
+5. View the result in the console window.
 
 ---
 
-
-## 📌 Notes
-
+## Notes
 - Programs are organized according to the class/session in which the concepts were covered.
 - The programs are intended for learning and practice of C++ and OOPS concepts.
